@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: lightblue;
+  color: darkblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#mixerButton {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#sprinkleArea {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: url('sprinkles.png') no-repeat center center;
+  background-size: cover;
+}
+
+
+/* Error message styles for real-time feedback */
+.error {
+  color: red;
+  margin-left: 5px;
+}
+
+
+/* CSS for the sprinkle animation */
+@keyframes sprinkle {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(0, -100px); }
+}
+
+.sprinkle-area {
+  animation: sprinkle 2s infinite;
+}
+
+#recipeForm {
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
